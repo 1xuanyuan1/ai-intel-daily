@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+  <title id="title">AI Intelligence Daily</title>
+  <desc id="desc">深空蓝色数据网格与神经网络组成的 AI 资讯封面</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040814"/>
+      <stop offset=".52" stop-color="#07152a"/>
+      <stop offset="1" stop-color="#120b2c"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="360" y1="160" x2="1300" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset=".48" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#67e8f9" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="orb" cx="40%" cy="32%" r="68%">
+      <stop stop-color="#1f3a68"/>
+      <stop offset=".7" stop-color="#071426"/>
+      <stop offset="1" stop-color="#02050d"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="800" fill="url(#bg)"/>
+  <rect width="1600" height="800" fill="url(#grid)"/>
+  <path d="M0 690C290 600 445 748 756 640c306-107 516-49 844-185v345H0Z" fill="#2563eb" fill-opacity=".05"/>
+  <g transform="translate(1080 400)" filter="url(#glow)">
+    <circle r="236" fill="url(#orb)" stroke="url(#neon)" stroke-width="3"/>
+    <ellipse rx="300" ry="112" fill="none" stroke="#22d3ee" stroke-opacity=".38" stroke-width="2" transform="rotate(-18)"/>
+    <ellipse rx="284" ry="96" fill="none" stroke="#8b5cf6" stroke-opacity=".3" stroke-width="2" transform="rotate(42)"/>
+    <g fill="none" stroke="url(#neon)" stroke-width="4" stroke-linecap="round">
+      <path d="m-144-54 88-88 112 26 82 98-36 126-126 56-118-72Z"/>
+      <path d="m-144-54 144 56 56-118M-142 92 0 2l102 106m-158-250L0 2l138-20" opacity=".72"/>
+    </g>
+    <g fill="#e6fdff">
+      <circle cx="-144" cy="-54" r="10"/><circle cx="-56" cy="-142" r="9"/>
+      <circle cx="56" cy="-116" r="12"/><circle cx="138" cy="-18" r="9"/>
+      <circle cx="102" cy="108" r="11"/><circle cx="-24" cy="164" r="9"/>
+      <circle cx="-142" cy="92" r="11"/><circle cy="2" r="16" fill="#22d3ee"/>
+    </g>
+  </g>
+  <g transform="translate(112 126)">
+    <text fill="#67e8f9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700" letter-spacing="6">AI INTELLIGENCE // DAILY SIGNAL</text>
+    <text y="128" fill="#f2f7ff" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="760" letter-spacing="-4">重要的新事，</text>
+    <text y="222" fill="#f2f7ff" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="760" letter-spacing="-4">需要被讲明白。</text>
+    <text y="292" fill="#9fb3cc" font-family="Inter, system-ui, sans-serif" font-size="28">官方信源 · 交叉核查 · 事实边界 · 趋势判断</text>
+    <g transform="translate(0 372)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="650" letter-spacing="2">
+      <rect width="250" height="54" rx="27" fill="#22d3ee" fill-opacity=".09" stroke="#22d3ee" stroke-opacity=".45"/>
+      <circle cx="28" cy="27" r="6" fill="#34d399"/>
+      <text x="48" y="34" fill="#c9fbff">SOURCES ONLINE</text>
+      <rect x="270" width="246" height="54" rx="27" fill="#8b5cf6" fill-opacity=".09" stroke="#a78bfa" stroke-opacity=".42"/>
+      <text x="302" y="34" fill="#e7ddff">VERIFIED INTEL</text>
+    </g>
+  </g>
+  <path d="M112 706H700" stroke="url(#neon)" stroke-width="3"/>
+  <text x="112" y="750" fill="#66819f" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="3">AI.DDUKE.CN / ASIA-SHANGHAI / OPEN SOURCE MONITOR</text>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "ai-intel-daily",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI 情报站——使用 Hexo 与 Stellar 构建的每日 AI 资讯站",
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "scripts": {
+    "sync:content": "node tools/sync-content.mjs",
+    "clean": "hexo clean",
+    "build": "npm run sync:content && hexo clean && hexo generate",
+    "server": "npm run sync:content && hexo server --port 4000",
+    "preview": "npm run build && hexo server --port 4000"
+  },
+  "dependencies": {
+    "hexo": "8.1.2",
+    "hexo-cli": "4.3.2",
+    "hexo-generator-archive": "2.0.0",
+    "hexo-generator-category": "2.0.0",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-searchdb": "1.5.0",
+    "hexo-generator-tag": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-server": "3.0.0",
+    "hexo-theme-stellar": "1.40.0"
+  }
+}

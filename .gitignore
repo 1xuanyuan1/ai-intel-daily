@@ -1,0 +1,8 @@
+node_modules/
+public/
+.deploy_git/
+db.json
+source/_posts/
+.DS_Store
+npm-debug.log*
+output/imagegen/

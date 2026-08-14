@@ -1,0 +1,170 @@
+canonical:
+  originalHost: ai.dduke.cn
+  officialHosts:
+    - ai.dduke.cn
+    - 1xuanyuan1.github.io
+    - localhost
+    - 127.0.0.1
+
+open_graph:
+  enable: true
+
+structured_data:
+  links:
+    - https://github.com/1xuanyuan1/ai-intel-daily
+
+logo:
+  avatar: '[/assets/images/ai-orb.svg](/)'
+  title: '[AI 情报站](/)'
+  subtitle: 'SIGNAL VERIFIED | 每日 AI 情报'
+
+menubar:
+  items:
+    - id: post
+      theme: '#22D3EE'
+      icon: solar:documents-bold-duotone
+      title: 情报
+      url: /
+    - id: topic
+      theme: '#8B5CF6'
+      icon: solar:notebook-bookmark-bold-duotone
+      title: 专题
+      url: /blog/categories/
+    - id: archive
+      theme: '#38BDF8'
+      icon: solar:planet-bold-duotone
+      title: 归档
+      url: /blog/archives/
+    - id: about
+      theme: '#A78BFA'
+      icon: solar:chat-square-like-bold-duotone
+      title: 关于
+      url: /about/
+
+site_tree:
+  home:
+    leftbar: welcome, recent
+    rightbar: null
+  index_blog:
+    base_dir: blog
+    menu_id: post
+    leftbar: welcome, recent
+    rightbar: null
+  post:
+    menu_id: post
+    leftbar: related, recent
+    rightbar: toc
+  page:
+    leftbar: recent
+    rightbar: toc
+  error_page:
+    menu_id: post
+    '404': /404.html
+    leftbar: recent
+    rightbar: null
+
+article:
+  pin_style: carousel
+  type: tech
+  cover_ratio: 2
+  banner_ratio: 2.5
+  auto_banner: false
+  auto_excerpt: 150
+  category_color:
+    每日情报: '#22D3EE'
+    Agent: '#8B5CF6'
+    模型前沿: '#38BDF8'
+    开源生态: '#2DD4BF'
+  license: '内容遵循来源标注与事实边界；转载时请保留原始信源和本站判断。'
+  share: [link]
+  related_posts:
+    enable: false
+    max_count: 5
+  reading_time: true
+  card_tags: true
+
+search:
+  service: local_search
+  local_search:
+    field: all
+    path: /search.json
+    content: true
+
+comments:
+  service: null
+
+footer:
+  social:
+    github:
+      icon: github:logo
+      title: 在 GitHub 查看源码
+      url: https://github.com/1xuanyuan1/ai-intel-daily
+  sitemap:
+    - title: 情报
+      items:
+        - '[近期发布](/)'
+        - '[分类](/blog/categories/)'
+        - '[标签](/blog/tags/)'
+        - '[归档](/blog/archives/)'
+    - title: 关于
+      items:
+        - '[情报方法](/about/)'
+        - '[GitHub](https://github.com/1xuanyuan1/ai-intel-daily)'
+  content: |
+    AI 情报站由 [{author.name}](/about/) 维护，使用 [{theme.name} {theme.version}]({theme.tree}) 生成。
+    每条信息尽量区分已证实事实、厂商主张、第三方观察与本站判断。
+
+style:
+  prefers_theme: auto
+  font-size:
+    root: 16px
+    body: 17px
+    code: 85%
+    codeblock: 0.8125rem
+  font-family:
+    body: 'Inter, "SF Pro Display", "PingFang SC", "Microsoft Yahei", system-ui, sans-serif'
+    code: '"JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace'
+    codeblock: '"JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace'
+  text-align: left
+  border-radius:
+    card-l: 22px
+    card: 16px
+    card-s: 11px
+    bar: 12px
+    image-l: 22px
+    image: 14px
+    image-s: 8px
+  color:
+    theme: 'hsl(187 92% 56%)'
+    accent: 'hsl(263 88% 70%)'
+    link: 'hsl(194 100% 64%)'
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9/build/styles/atom-one-dark.min.css
+  gradient:
+    start: 'linear-gradient(90deg, #22D3EE, #3B82F6, #8B5CF6, #22D3EE)'
+    searchbar: 'linear-gradient(90deg, #22D3EE, #60A5FA, #A78BFA, #22D3EE)'
+    avatar: 'conic-gradient(from 0deg, #22D3EE, #3B82F6, #8B5CF6, #22D3EE)'
+    angle: 225deg
+  leftbar:
+    ui-style: glass
+    background-color-light: 'rgba(244, 248, 255, 0.9)'
+    background-color-dark: 'rgba(6, 12, 24, 0.82)'
+    background-image:
+    blur-px: 32px
+    blur-bg: transparent
+    background-opacity: 0.92
+  site:
+    background-image:
+    blur-px: 80px
+    blur-bg: transparent
+    blur-sat: 150%
+
+default:
+  avatar: /assets/images/ai-orb.svg
+  cover: /assets/images/ai-intel-signal-matrix.jpg
+  banner: /assets/images/ai-intel-signal-matrix.jpg
+  loading: https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%2322D3EE
+
+system:
+  override_pretty_urls: true
