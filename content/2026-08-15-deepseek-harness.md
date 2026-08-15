@@ -89,9 +89,9 @@ DeepSeek Harness 把会话设计成只追加的 `SessionEvent` 日志。一个�
 
 会，但现有数据只能支持这个较弱的结论。
 
-Composio 在8月6日公开的一组小规模测试中，让同一个 DeepSeek V4 Flash 分别运行在 Oh My Pi、Claude Code、Codex 和 OpenCode 四种框架里，完成 30 项涉及 Gmail、GitHub、Slack 和 Notion 的任务。完成数分别是 17、16、16 和 14，每任务耗时与成功任务成本也不同。
+Composio 在8月11日发布了一组 Harness 对比测试，让 DeepSeek V4 Flash 分别运行在 8 种框架里，完成 30 项涉及 Airtable、Gmail、Google Calendar、Google Sheets、GitHub、Slack 和 PostHog 的多步骤任务。Pi 完成 20 项，OMP 完成 17 项；Claude Code、Codex 和 DeepAgents 各完成 16 项；Hermes 完成 15 项，OpenCode 完成 14 项。Prime Agent 在 24 次有效运行中完成 15 项，另有 6 次运行未计入其通过率。
 
-这组数据说明 Harness 是可以被单独优化和评估的变量。它没有测试 DeepSeek Harness，也不能证明 DeepSeek Harness 领先。
+这组数据说明 Harness 是可以被单独优化和评估的变量。它没有测试 DeepSeek Harness，也不能证明 DeepSeek Harness 领先。完整方法、成本与口径限制见本站中文译编：[Composio 八大 Agent Harness 实测](/intelligence/2026/08/15/2026-08-15-composio-deepseek-v4-flash-harness-benchmark-zh/)。
 
 ## 三组独立体验告诉了我们什么
 
@@ -146,13 +146,13 @@ Composio 在8月6日公开的一组小规模测试中，让同一个 DeepSeek V4
 - [DeepSeek Harness 架构文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.zh.md)｜DeepSeek AI｜核对插件树、能力 seam、轮次流程与会话日志。
 - [Cordis 入门](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cordis-primer.zh.md)｜DeepSeek AI｜核对服务、依赖、类型化事件与可逆副作用。
 - [A Programming Paradigm for Spatiotemporal Composability](https://github.com/cordiverse/paper)｜Cordiverse｜论文为持续修订的预印本。
+- [Finding the Best Harness for DeepSeek V4 Flash](https://composio.dev/content/best-agent-harness-deepseek-v4-flash)｜Composio｜2026-08-11｜核对 8 种 Harness 的任务完成率、耗时、Token、成本与评测限制。
 
 ### 交叉来源
 
 - [DeepSeek Harness 实测：一夜 5 万星，Agent 界的 Android 来了](https://www.163.com/dy/article/L49SJTK405119FMA.html)｜极客公园｜2026-08-14｜安装、任务交付、成本与产品完成度样本。
 - [深度体验 DeepSeek Harness，我原谅它涨价了](https://finance.sina.cn/tech/csj/2026-08-14/detail-inineywh3041305.d.html)｜量子位｜2026-08-14｜四种模式、轨迹功能、DSH 与 Codex 的个别 Demo。
 - [从0到1带你速通 DeepSeek Harness](https://mp.weixin.qq.com/s/xkC1aenHFNSH2BxyzLDfcA)｜数字生命卡兹克｜2026-08-14｜产品上手、社区插件和普通用户门槛。
-- [Composio 测试 Codex 等 4 个 AI 工具](https://www.ithome.com/0/986/967.htm)｜IT之家转述 Composio｜2026-08-07｜证明同模型在不同 Harness 中的结果、速度和成本可能不同；未测试 DSH。
 
 ---
 
