@@ -361,6 +361,105 @@ article.md-text {
   vertical-align: middle;
 }
 
+/* One cover hierarchy everywhere: centered one-line headline, bottom caption. */
+.post-list .post-card.post.photo .cover,
+.pin-slider .pin-slide.post-slide {
+  isolation: isolate;
+}
+
+/* Desktop keeps the preferred neural-core art; mobile uses the H5-safe cover. */
+@media (min-width: 721px) {
+  .post-list .post-card.post.photo .cover,
+  .pin-slider .pin-slide.post-slide {
+    background-image: url('/assets/images/ai-intel-neural-core.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .post-list .post-card.post.photo .cover {
+    --cover-url: url('/assets/images/ai-intel-neural-core.jpg') !important;
+  }
+
+  .pin-slider .pin-slide.post-slide {
+    --pin-cover-url: url('/assets/images/ai-intel-neural-core.jpg') !important;
+  }
+
+  .post-list .post-card.post.photo .cover > img,
+  .pin-slider .pin-slide.post-slide > .pin-slide-bg {
+    opacity: 0;
+  }
+}
+
+.post-list .post-card.post.photo .cover::after,
+.pin-slider .pin-slide.post-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to bottom, rgba(2, 8, 23, 0.2), rgba(2, 8, 23, 0.05) 37%, rgba(2, 8, 23, 0.22) 58%, rgba(2, 8, 23, 0.9) 100%),
+    linear-gradient(to right, rgba(2, 8, 23, 0.24), transparent 24%, transparent 76%, rgba(2, 8, 23, 0.24));
+  pointer-events: none;
+}
+
+.post-list .post-card.post.photo .cover .cover-info,
+.pin-slider .pin-slide.post-slide .pin-slide-text {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+  box-sizing: border-box;
+  width: 100%;
+  padding: clamp(0.85rem, 2.4vw, 1.35rem) clamp(1rem, 3.6vw, 2rem);
+  background: none;
+  line-height: 1.35;
+}
+
+.post-list .post-card.post.photo .cover .cover-info .headline,
+.pin-slider .pin-slide.post-slide .pin-slide-headline {
+  grid-row: 2;
+  align-self: center;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: #f8fbff;
+  font-size: clamp(1.45rem, 3.6vw, 2.35rem);
+  font-weight: 750;
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.82);
+  white-space: nowrap;
+}
+
+.post-list .post-card.post.photo .cover .cover-info .caption,
+.pin-slider .pin-slide.post-slide .pin-slide-caption {
+  display: -webkit-box;
+  grid-row: 3;
+  align-self: end;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: rgba(248, 251, 255, 0.9);
+  font-size: clamp(0.78rem, 1.65vw, 0.95rem);
+  font-weight: 430;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: left;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  overflow-wrap: anywhere;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.post-list .post-card.post.photo .cover .cover-info div + div,
+.pin-slider .pin-slide.post-slide .pin-slide-headline + .pin-slide-caption {
+  margin-top: 0;
+}
+
 .tag-plugin.note,
 .tag-plugin.box,
 figure.highlight {
@@ -503,6 +602,22 @@ figure.highlight {
 
   .ai-system-status {
     display: none;
+  }
+
+  .post-list .post-card.post.photo .cover .cover-info,
+  .pin-slider .pin-slide.post-slide .pin-slide-text {
+    padding: 0.7rem 0.85rem;
+  }
+
+  .post-list .post-card.post.photo .cover .cover-info .headline,
+  .pin-slider .pin-slide.post-slide .pin-slide-headline {
+    font-size: clamp(1.05rem, 5.5vw, 1.45rem);
+  }
+
+  .post-list .post-card.post.photo .cover .cover-info .caption,
+  .pin-slider .pin-slide.post-slide .pin-slide-caption {
+    font-size: clamp(0.7rem, 3.35vw, 0.82rem);
+    line-height: 1.38;
   }
 }
 

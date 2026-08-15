@@ -6,8 +6,11 @@ layout: post
 description: "Anthropic 第二份风险报告首次披露未发布内部模型 Model 2，同时公开了生物安全分类器、Agent 权限、训练数据与监控流程的多起故障。"
 categories:
   - AI安全
-cover: /assets/images/ai-intel-signal-matrix.jpg
+cover: /assets/images/ai-intel-h5-cover.jpg
 banner: /assets/images/ai-intel-signal-matrix.jpg
+poster:
+  headline: "Anthropic 安全流程失灵"
+  caption: "内部模型 Model 2 首次曝光；更值得关注的，是分类器、Agent 权限、训练数据与监控流程的多起故障。"
 status: published
 topic: Anthropic Risk Report August 2026
 source_coverage_date: "2026-07-15"

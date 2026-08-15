@@ -6,8 +6,11 @@ layout: post
 description: "从 Cordis 插件内核、四种运行模式到只追加事件流，拆解 DeepSeek Harness 改变了什么、尚未证明什么。"
 categories:
   - Agent
-cover: /assets/images/ai-intel-signal-matrix.jpg
+cover: /assets/images/ai-intel-h5-cover.jpg
 banner: /assets/images/ai-intel-signal-matrix.jpg
+poster:
+  headline: "Agent 竞争，不只看模型"
+  caption: "从 Cordis 插件内核、四种运行模式到只追加事件流，拆解 DeepSeek Harness 改变了什么、尚未证明什么。"
 pin: 1
 status: deep-dive
 topic: DeepSeek Harness

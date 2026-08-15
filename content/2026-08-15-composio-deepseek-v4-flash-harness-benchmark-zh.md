@@ -6,8 +6,11 @@ layout: post
 description: "Composio 用 DeepSeek V4 Flash 在 8 种 Agent Harness 上执行 30 项多应用任务；Pi 完成 20 项，OpenCode 完成 14 项。本文为原报告完整中文译编。"
 categories:
   - 评测报告
-cover: /assets/images/ai-intel-signal-matrix.jpg
+cover: /assets/images/ai-intel-h5-cover.jpg
 banner: /assets/images/ai-intel-signal-matrix.jpg
+poster:
+  headline: "八大 Harness，同模不同命"
+  caption: "同跑 DeepSeek V4 Flash 的 30 项多步骤任务，Pi 完成 20 项，OpenCode 完成 14 项。"
 status: translated-report
 topic: DeepSeek V4 Flash Agent Harness Benchmark
 original_published_at: "2026-08-11"
